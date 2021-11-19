@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="landscape" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="juegoDeNinos" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gsx-AI-mLB" userLabel="puntuacionNumero">
+                                <rect key="frame" x="433" y="71" width="298" height="20.333333333333329"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Puntuación:" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Op7-fM-ACq" userLabel="puntuacionText">
+                                <rect key="frame" x="433" y="25" width="298" height="25.333333333333329"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circulo" translatesAutoresizingMaskIntoConstraints="NO" id="g2z-PP-gld">
+                                <rect key="frame" x="318" y="20" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="Tmu-YQ-TDz"/>
+                                    <constraint firstAttribute="height" constant="100" id="Y0Z-K0-S6i"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="sBI-dQ-XRE" userLabel="Stack View 1">
+                                <rect key="frame" x="0.0" y="140" width="363" height="171.66666666666663"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RYc-eY-4F1" userLabel="ButtonCirculo">
+                                        <rect key="frame" x="0.0" y="0.0" width="171.66666666666666" height="171.66666666666666"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="RYc-eY-4F1" secondAttribute="height" multiplier="1:1" id="tsN-nR-t3d"/>
+                                        </constraints>
+                                        <state key="normal" image="circulo"/>
+                                        <connections>
+                                            <action selector="buttonCircle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dOt-j9-CRV"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lD2-Nd-S8W" userLabel="ButtonTriangulo">
+                                        <rect key="frame" x="191.66666666666663" y="0.0" width="171.33333333333337" height="171.66666666666666"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="lD2-Nd-S8W" secondAttribute="height" multiplier="1:1" id="EsZ-oO-aZl"/>
+                                        </constraints>
+                                        <state key="normal" image="triangulo"/>
+                                        <connections>
+                                            <action selector="buttonTriangle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IXB-1D-mV5"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="MO9-SM-E8s" userLabel="Stack View 2">
+                                <rect key="frame" x="373" y="140" width="363" height="171.66666666666663"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zXO-QM-kqH" userLabel="ButtonPentagono">
+                                        <rect key="frame" x="0.0" y="0.0" width="171.66666666666666" height="171.66666666666666"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="zXO-QM-kqH" secondAttribute="height" multiplier="1:1" id="RUP-gy-Mf7"/>
+                                        </constraints>
+                                        <state key="normal" image="pentagono"/>
+                                        <connections>
+                                            <action selector="buttonPentagon:" destination="BYZ-38-t0r" eventType="touchUpInside" id="h9h-z1-XtJ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J13-Bh-B5j" userLabel="ButtonCuadrado">
+                                        <rect key="frame" x="191.66666666666663" y="0.0" width="171.33333333333337" height="171.66666666666666"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="J13-Bh-B5j" secondAttribute="height" multiplier="1:1" id="spO-gM-MDY"/>
+                                        </constraints>
+                                        <state key="normal" image="cuadrado"/>
+                                        <connections>
+                                            <action selector="buttonSquare:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PjG-1a-xuN"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                        <constraints>
+                            <constraint firstItem="MO9-SM-E8s" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="6p1-OY-zit"/>
+                            <constraint firstItem="MO9-SM-E8s" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="20" id="HBH-TJ-qer"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gsx-AI-mLB" secondAttribute="trailing" constant="5" id="HQN-DN-Ig4"/>
+                            <constraint firstItem="g2z-PP-gld" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="20" id="KfX-iw-xOh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="MO9-SM-E8s" secondAttribute="bottom" id="MQl-If-lgx"/>
+                            <constraint firstItem="MO9-SM-E8s" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="NsZ-LR-yAC"/>
+                            <constraint firstItem="gsx-AI-mLB" firstAttribute="top" secondItem="Op7-fM-ACq" secondAttribute="bottom" constant="20.5" id="Oel-1E-wNM"/>
+                            <constraint firstItem="MO9-SM-E8s" firstAttribute="top" secondItem="g2z-PP-gld" secondAttribute="bottom" constant="20" id="SdB-3M-sGU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="leading" secondItem="sBI-dQ-XRE" secondAttribute="leading" id="Szg-E9-1LK"/>
+                            <constraint firstItem="Op7-fM-ACq" firstAttribute="leading" secondItem="g2z-PP-gld" secondAttribute="trailing" constant="15" id="VS5-PH-gt1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Op7-fM-ACq" secondAttribute="trailing" constant="5" id="aaN-tw-6O6"/>
+                            <constraint firstItem="MO9-SM-E8s" firstAttribute="top" secondItem="sBI-dQ-XRE" secondAttribute="bottom" id="bgk-Gv-cFq"/>
+                            <constraint firstItem="Op7-fM-ACq" firstAttribute="top" secondItem="g2z-PP-gld" secondAttribute="top" constant="5" id="fvN-d2-Lfx"/>
+                            <constraint firstItem="g2z-PP-gld" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="fzY-N2-g7G"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="centerX" secondItem="sBI-dQ-XRE" secondAttribute="centerX" id="i2s-x0-Y73"/>
+                            <constraint firstItem="gsx-AI-mLB" firstAttribute="leading" secondItem="g2z-PP-gld" secondAttribute="trailing" constant="15" id="sIA-5D-yHc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="centerX" secondItem="sBI-dQ-XRE" secondAttribute="trailing" constant="5" id="sMe-NC-uIx"/>
+                            <constraint firstItem="MO9-SM-E8s" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="centerX" constant="5" id="tQG-Rt-T57"/>
+                            <constraint firstItem="sBI-dQ-XRE" firstAttribute="top" secondItem="g2z-PP-gld" secondAttribute="bottom" constant="20" id="teT-rO-Iiv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="sBI-dQ-XRE" secondAttribute="bottom" id="z7h-wQ-M3O"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Szg-E9-1LK"/>
+                                <exclude reference="i2s-x0-Y73"/>
+                                <exclude reference="sMe-NC-uIx"/>
+                                <exclude reference="6p1-OY-zit"/>
+                                <exclude reference="HBH-TJ-qer"/>
+                                <exclude reference="NsZ-LR-yAC"/>
+                                <exclude reference="SdB-3M-sGU"/>
+                                <exclude reference="bgk-Gv-cFq"/>
+                                <exclude reference="tQG-Rt-T57"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <include reference="Szg-E9-1LK"/>
+                                <include reference="sMe-NC-uIx"/>
+                                <include reference="6p1-OY-zit"/>
+                                <include reference="SdB-3M-sGU"/>
+                                <include reference="tQG-Rt-T57"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular">
+                            <mask key="constraints">
+                                <include reference="i2s-x0-Y73"/>
+                                <include reference="HBH-TJ-qer"/>
+                                <include reference="NsZ-LR-yAC"/>
+                                <include reference="bgk-Gv-cFq"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="figure" destination="g2z-PP-gld" id="H5W-NI-H2U"/>
+                        <outlet property="fondo" destination="8bC-Xf-vdC" id="J8R-if-dyo"/>
+                        <outlet property="puntuacion" destination="gsx-AI-mLB" id="Ujf-hG-AVr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.25" y="98.550724637681171"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="circulo" width="313" height="318"/>
+        <image name="cuadrado" width="343" height="338"/>
+        <image name="pentagono" width="342" height="337"/>
+        <image name="triangulo" width="348" height="310"/>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
